@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Pharma | Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <div class="main-wrapper">
+    <div class="site-navbar">
+      <div class="search-wrap">
+        <div class="container">
+          <a href="#" class="search-close js-search-close"><span class="icon-close2"></span></a>
+          <form action="#" method="post">
+            <input type="text" class="form-control" placeholder="Search keyword and hit enter...">
+          </form>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="logo">
+            <div class="site-logo">
+              <a href="homepage.html" class="js-logo-clone"><img src="images/logo.png" width="100"></a>
+            </div>
+          </div>
+          <div class="main-nav d-none d-lg-block">
+            <nav class="site-navigation text-right text-md-center" role="navigation">
+              <ul class="site-menu js-clone-nav d-none d-lg-block">
+                <li><a href="homepage.html">home</a></li>
+                <!-- <li><a href="profile.html">profile</a></li> -->
+                <li><a href="find_doctors.html">find doctor</a></li>
+                <!-- <li class="has-children">
+                  <a href="#">Product</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Supplements</a></li>
+                    <li class="has-children">
+                      <a href="#">Vitamins</a>
+                      <ul class="dropdown">
+                        <li><a href="#">Supplements</a></li>
+                        <li><a href="#">Vitamins</a></li>
+                        <li><a href="#">Diet &amp; Nutrition</a></li>
+                        <li><a href="#">Tea &amp; Coffee</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Diet &amp; Nutrition</a></li>
+                    <li><a href="#">Tea &amp; Coffee</a></li>
+                  </ul>
+                </li> -->
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="order.html">orders</a></li>
+                <li><a href="login.html">Login</a></li>
+
+                <!-- <li><a href="register.html">Register</a></li>  -->
+              </ul>
+            </nav>
+          </div>
+          <div class="icons d-flex">
+            <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
+            <a href="#" class="icons-btn d-inline-block bag">
+              <span class="fa fa-bell"></span>
+              <span class="number">1</span>
+            </a>
+            <a href="cart.html" class="icons-btn d-inline-block bag">
+              <span class="icon-shopping-bag"></span>
+              <span class="number">2</span>
+            </a>
+            <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span
+                class="icon-menu"></span>
+            </a>
+            <div class="dropdown pl-3">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                User
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <a href="patient_profile.html" class="dropdown-item">Profile</a>
+                <a href="#" class="dropdown-item">Setting</a>
+                <a href="#" class="dropdown-item">Logout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- content-wrapper -->
+    <main class="content-wrapper profile-content-wrapper">
+      <div class="container find-doctors-container">
+        <form class="common-frm user-profile-frm" action="#">
+          <div class="row user-profile-row justify-content-between align-items-start">
+            <div class="form-group ml-auto">
+              <input type="file" class="d-none" accept="image/*" name="image" id="file"
+                onchange="loadDucumentFile(event)">
+              <label for="file" class="user-profile-label">
+                <img id="userProfile" src="./images/person_1.jpg" class="social-profile" alt="Social Profile">
+              </label>
+            </div>
+            <a href="patient_profile.html" class="btn btn-danger ml-auto">Back</a>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="group">
+                <input type="text" id="profile_name" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="form-label">Name</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="group">
+                <input type="text" id="profile_email" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="form-label">Email</label>
+              </div>
+            </div>
+          </div>
+          <!-- <h5>Your Address</h5> -->
+          <div class="row">
+            <div class="col-md-6">
+              <div class="group">
+                <input type="text" class="profile_country" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="form-label">Country</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="group">
+                <input type="text" class="profile_city" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="form-label">City</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="group">
+                <input type="text" class="profile_address" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="form-label">Address</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="group">
+                <input type="text" class="profile_postalcode" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="form-label">Postal Code</label>
+              </div>
+            </div>
+          </div>
+          <div class="row no-gutters justify-content-center mt-4">
+            <button type="submit" class="btn btn-danger">Save</a>
+          </div>
+        </form>
+      </div>
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+
+              <div class="block-7">
+                <h3 class="footer-heading mb-4">About Us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quae reiciendis distinctio voluptates
+                  sed dolorum excepturi iure eaque, aut unde.</p>
+              </div>
+
+            </div>
+            <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
+              <h3 class="footer-heading mb-4">Quick Links</h3>
+              <ul class="list-unstyled">
+                <li><a href="#">Supplements</a></li>
+                <li><a href="#">Vitamins</a></li>
+                <li><a href="#">Diet &amp; Nutrition</a></li>
+                <li><a href="#">Tea &amp; Coffee</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="block-5 mb-5">
+                <h3 class="footer-heading mb-4">Contact Info</h3>
+                <ul class="list-unstyled">
+                  <li class="address">203 Fake St. Mountain View, San Francisco, California, USA</li>
+                  <li class="phone"><a href="tel://23923929210">+2 392 3929 210</a></li>
+                  <li class="email">emailaddress@domain.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <!-- Ends: content-wrapper -->
+
+
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Pharma</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" />
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/swiper.min.css" />
+
+</head>
+
+<body>
+
+  <div class="site-wrap site-home">
+    <div class="site-navbar">
+      <div class="search-wrap">
+        <div class="container">
+          <a href="#" class="search-close js-search-close"><span class="icon-close2"></span></a>
+          <form action="#" method="post">
+            <input type="text" class="form-control" placeholder="Search keyword and hit enter...">
+          </form>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="logo">
+            <div class="site-logo">
+              <a href="homepage.html" class="js-logo-clone"><img src="images/logo.png" width="100"></a>
+            </div>
+          </div>
+          <div class="main-nav d-none d-lg-block">
+            <nav class="site-navigation text-right text-md-center" role="navigation">
+              <ul class="site-menu js-clone-nav d-none d-lg-block">
+                <li class="active"><a href="homepage.html">home</a></li>
+                <!-- <li><a href="profile.html">profile</a></li> -->
+                <li><a href="find_doctors.html">find doctor</a></li>
+                <!-- <li class="has-children">
+                  <a href="#">Product</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Supplements</a></li>
+                    <li class="has-children">
+                      <a href="#">Vitamins</a>
+                      <ul class="dropdown">
+                        <li><a href="#">Supplements</a></li>
+                        <li><a href="#">Vitamins</a></li>
+                        <li><a href="#">Diet &amp; Nutrition</a></li>
+                        <li><a href="#">Tea &amp; Coffee</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Diet &amp; Nutrition</a></li>
+                    <li><a href="#">Tea &amp; Coffee</a></li>
+                  </ul>
+                </li> -->
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="order.html">orders</a></li>
+                <li><a href="login.html">Login</a></li>
+
+                <!-- <li><a href="register.html">Register</a></li>  -->
+              </ul>
+            </nav>
+          </div>
+          <div class="icons d-flex">
+            <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
+            <a href="#" class="icons-btn d-inline-block bag">
+              <span class="fa fa-bell"></span>
+              <span class="number">1</span>
+            </a>
+            <a href="cart.html" class="icons-btn d-inline-block bag">
+              <span class="icon-shopping-bag"></span>
+              <span class="number">2</span>
+            </a>
+            <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span
+                class="icon-menu"></span>
+            </a>
+            <div class="dropdown pl-3">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                User
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <a href="#" class="dropdown-item">Profile</a>
+                <a href="#" class="dropdown-item">Setting</a>
+                <a href="#" class="dropdown-item">Logout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home-wrapper">
+      <div class="site-section container mt-5">
+        <div class="home-banner-slider-row">
+          <div class="swiper-container home-banner-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/banner1.png" class="img-fluid" alt="banner1">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/banner1.png" class="img-fluid" alt="banner1">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/banner1.png" class="img-fluid" alt="banner1">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/banner1.png" class="img-fluid" alt="banner1">
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <input type="text" placeholder="Search for any products here" class="product-search form-control"
+              name="product-search" id="product-search">
+            <img src="./images/search-icon.svg" alt="search-icon" class="search">
+          </div>
+        </div>
+        <div class="swiper-container category-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/category1.png" class="category-img" alt="category1">
+              <h5>Test category</h5>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/category1.png" class="category-img" alt="category2">
+              <h5>Test category</h5>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/category1.png" class="category-img" alt="category3">
+              <h5>Test category</h5>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/category1.png" class="category-img" alt="category1">
+              <h5>Test category</h5>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/category1.png" class="category-img" alt="category2">
+              <h5>Test category</h5>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/category1.png" class="category-img" alt="category3">
+              <h5>Test category</h5>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/category1.png" class="category-img" alt="category1">
+              <h5>Test category</h5>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/category1.png" class="category-img" alt="category2">
+              <h5>Test category</h5>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/category1.png" class="category-img" alt="category3">
+              <h5>Test category</h5>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="pro-box-mb col-12 col-md-4 col-lg-3">
+            <a href="#" class="pro-box">
+              <!-- <span class="tag">Sale</span> -->
+              <img src="images/product_01.png" alt="Product_Img1">
+              <h6>Lorem ipsum</h6>
+              <button type="button" class="btn-price btn btn-danger">$120</button>
+              <div class="input-group">
+                <input type="button" value="-" class="button-minus btn circle-btn" data-field="quantity">
+                <input type="number" step="1" max="" value="9" name="quantity" class="quantity-field">
+                <input type="button" value="+" class="button-plus btn circle-btn" data-field="quantity">
+              </div>
+            </a>
+          </div>
+          <div class="pro-box-mb col-12 col-md-4 col-lg-3">
+            <a href="#" class="pro-box">
+              <!-- <span class="tag">Sale</span> -->
+              <img src="images/product_01.png" alt="Product_Img1">
+              <h6>Lorem ipsum</h6>
+              <button type="button" class="btn-price btn btn-danger">$120</button>
+              <div class="input-group">
+                <input type="button" value="-" class="button-minus btn circle-btn" data-field="quantity">
+                <input type="number" step="1" max="" value="9" name="quantity" class="quantity-field">
+                <input type="button" value="+" class="button-plus btn circle-btn" data-field="quantity">
+              </div>
+            </a>
+          </div>
+          <div class="pro-box-mb col-12 col-md-4 col-lg-3">
+            <a href="#" class="pro-box">
+              <!-- <span class="tag">Sale</span> -->
+              <img src="images/product_01.png" alt="Product_Img1">
+              <h6>Lorem ipsum</h6>
+              <button type="button" class="btn-price btn btn-danger">$120</button>
+              <div class="input-group">
+                <input type="button" value="-" class="button-minus btn circle-btn" data-field="quantity">
+                <input type="number" step="1" max="" value="9" name="quantity" class="quantity-field">
+                <input type="button" value="+" class="button-plus btn circle-btn" data-field="quantity">
+              </div>
+            </a>
+          </div>
+          <div class="pro-box-mb col-12 col-md-4 col-lg-3">
+            <a href="#" class="pro-box">
+              <!-- <span class="tag">Sale</span> -->
+              <img src="images/product_01.png" alt="Product_Img1">
+              <h6>Lorem ipsum</h6>
+              <button type="button" class="btn-price btn btn-danger">$120</button>
+              <div class="input-group">
+                <input type="button" value="-" class="button-minus btn circle-btn" data-field="quantity">
+                <input type="number" step="1" max="" value="9" name="quantity" class="quantity-field">
+                <input type="button" value="+" class="button-plus btn circle-btn" data-field="quantity">
+              </div>
+            </a>
+          </div>
+          <div class="pro-box-mb col-12 col-md-4 col-lg-3">
+            <a href="#" class="pro-box">
+              <!-- <span class="tag">Sale</span> -->
+              <img src="images/product_01.png" alt="Product_Img1">
+              <h6>Lorem ipsum</h6>
+              <button type="button" class="btn-price btn btn-danger">$120</button>
+              <div class="input-group">
+                <input type="button" value="-" class="button-minus btn circle-btn" data-field="quantity">
+                <input type="number" step="1" max="" value="9" name="quantity" class="quantity-field">
+                <input type="button" value="+" class="button-plus btn circle-btn" data-field="quantity">
+              </div>
+            </a>
+          </div>
+          <div class="pro-box-mb col-12 col-md-4 col-lg-3">
+            <a href="#" class="pro-box">
+              <!-- <span class="tag">Sale</span> -->
+              <img src="images/product_01.png" alt="Product_Img1">
+              <h6>Lorem ipsum</h6>
+              <button type="button" class="btn-price btn btn-danger">$120</button>
+              <div class="input-group">
+                <input type="button" value="-" class="button-minus btn circle-btn" data-field="quantity">
+                <input type="number" step="1" max="" value="9" name="quantity" class="quantity-field">
+                <input type="button" value="+" class="button-plus btn circle-btn" data-field="quantity">
+              </div>
+            </a>
+          </div>
+          <div class="pro-box-mb col-12 col-md-4 col-lg-3">
+            <a href="#" class="pro-box">
+              <!-- <span class="tag">Sale</span> -->
+              <img src="images/product_01.png" alt="Product_Img1">
+              <h6>Lorem ipsum</h6>
+              <button type="button" class="btn-price btn btn-danger">$120</button>
+              <div class="input-group">
+                <input type="button" value="-" class="button-minus btn circle-btn" data-field="quantity">
+                <input type="number" step="1" max="" value="9" name="quantity" class="quantity-field">
+                <input type="button" value="+" class="button-plus btn circle-btn" data-field="quantity">
+              </div>
+            </a>
+          </div>
+          <div class="pro-box-mb col-12 col-md-4 col-lg-3">
+            <a href="#" class="pro-box">
+              <!-- <span class="tag">Sale</span> -->
+              <img src="images/product_01.png" alt="Product_Img1">
+              <h6>Lorem ipsum</h6>
+              <button type="button" class="btn-price btn btn-danger">$120</button>
+              <div class="input-group">
+                <input type="button" value="-" class="button-minus btn circle-btn" data-field="quantity">
+                <input type="number" step="1" max="" value="9" name="quantity" class="quantity-field">
+                <input type="button" value="+" class="button-plus btn circle-btn" data-field="quantity">
+              </div>
+            </a>
+          </div>
+          <div class="pro-box-mb col-12 col-md-4 col-lg-3">
+            <a href="#" class="pro-box">
+              <!-- <span class="tag">Sale</span> -->
+              <img src="images/product_01.png" alt="Product_Img1">
+              <h6>Lorem ipsum</h6>
+              <button type="button" class="btn-price btn btn-danger">$120</button>
+              <div class="input-group">
+                <input type="button" value="-" class="button-minus btn circle-btn" data-field="quantity">
+                <input type="number" step="1" max="" value="9" name="quantity" class="quantity-field">
+                <input type="button" value="+" class="button-plus btn circle-btn" data-field="quantity">
+              </div>
+            </a>
+          </div>
+          <div class="pro-box-mb col-12 col-md-4 col-lg-3">
+            <a href="#" class="pro-box">
+              <!-- <span class="tag">Sale</span> -->
+              <img src="images/product_01.png" alt="Product_Img1">
+              <h6>Lorem ipsum</h6>
+              <button type="button" class="btn-price btn btn-danger">$120</button>
+              <div class="input-group">
+                <input type="button" value="-" class="button-minus btn circle-btn" data-field="quantity">
+                <input type="number" step="1" max="" value="9" name="quantity" class="quantity-field">
+                <input type="button" value="+" class="button-plus btn circle-btn" data-field="quantity">
+              </div>
+            </a>
+          </div>
+          <div class="pro-box-mb col-12 col-md-4 col-lg-3">
+            <a href="#" class="pro-box">
+              <!-- <span class="tag">Sale</span> -->
+              <img src="images/product_01.png" alt="Product_Img1">
+              <h6>Lorem ipsum</h6>
+              <button type="button" class="btn-price btn btn-danger">$120</button>
+              <div class="input-group">
+                <input type="button" value="-" class="button-minus btn circle-btn" data-field="quantity">
+                <input type="number" step="1" max="" value="9" name="quantity" class="quantity-field">
+                <input type="button" value="+" class="button-plus btn circle-btn" data-field="quantity">
+              </div>
+            </a>
+          </div>
+          <div class="pro-box-mb col-12 col-md-4 col-lg-3">
+            <a href="#" class="pro-box">
+              <!-- <span class="tag">Sale</span> -->
+              <img src="images/product_01.png" alt="Product_Img1">
+              <h6>Lorem ipsum</h6>
+              <button type="button" class="btn-price btn btn-danger">$120</button>
+              <div class="input-group">
+                <input type="button" value="-" class="button-minus btn circle-btn" data-field="quantity">
+                <input type="number" step="1" max="" value="9" name="quantity" class="quantity-field">
+                <input type="button" value="+" class="button-plus btn circle-btn" data-field="quantity">
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="checkout-card" id="checkout_card">
+        <h5>Cart total: $400.00</h5>
+        <button type="button" class="btn btn-primary">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    //category-slider
+    var swiper = new Swiper('.category-slider', {
+      // slidesPerView: 7,
+      loop: true,
+      spaceBetween: 20,
+      //  effect: 'fade',
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+          // spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 5,
+        },
+        1024: {
+          slidesPerView: 7,
+        },
+      }
+    });
+    //home-banner-slider
+    var swiper = new Swiper('.home-banner-slider', {
+      slidesPerView: 1,
+      loop: true,
+      spaceBetween: 30,
+      effect: 'fade',
+      autoplay: {
+        delay: 200000000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+    function incrementValue(e) {
+      e.preventDefault();
+      var fieldName = $(e.target).data('field');
+      var parent = $(e.target).closest('div');
+      var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+
+      if (!isNaN(currentVal)) {
+        parent.find('input[name=' + fieldName + ']').val(currentVal + 1);
+      } else {
+        parent.find('input[name=' + fieldName + ']').val(0);
+      }
+    }
+
+    function decrementValue(e) {
+      e.preventDefault();
+      var fieldName = $(e.target).data('field');
+      var parent = $(e.target).closest('div');
+      var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+
+      if (!isNaN(currentVal) && currentVal > 0) {
+        parent.find('input[name=' + fieldName + ']').val(currentVal - 1);
+      } else {
+        parent.find('input[name=' + fieldName + ']').val(0);
+      }
+    }
+
+    $('.input-group').on('click', '.button-plus', function (e) {
+      incrementValue(e);
+
+      var x = document.getElementById("checkout_card");
+      if (x.style.display === "flex") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "flex";
+      }
+    });
+
+    $('.input-group').on('click', '.button-minus', function (e) {
+      decrementValue(e);
+
+      var x = document.getElementById("checkout_card");
+      if (x.style.display === "flex") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "flex";
+      }
+    });
+
+
+  </script>
+
+</body>
+
+</html>
